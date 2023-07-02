@@ -36,8 +36,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 16px;
+  gap: 12px;
   font-size: 48px;
+  font-weight: 700;
+}
+.minute-counter {
+  width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-counter {
+  width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-up-alert {
+  display: none;
+  position: absolute;
+  bottom: 123px;
+  left: 36%;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+.time-up {
+  margin-bottom: 4px;
+  font-weight: 700;
+  color: #cc3433;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.help {
+  font-size: 12px;
+}
+.help span {
   font-weight: 700;
 }
 
@@ -63,6 +100,11 @@ body {
   border-radius: 6px;
   top: 75px;
   right: 13px;
+}
+.start-btn:disabled {
+  cursor: default;
+  background-color: gray;
+  color: #000072;
 }
 
 .pause-btn {

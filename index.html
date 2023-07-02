@@ -12,9 +12,13 @@
     />
     <link rel="stylesheet" href="./style/reset.css" />
     <link rel="stylesheet" href="./style/style.css" />
+    <script src="
+      https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js
+      "></script>
+    <script src="./script/script.js"></script>
     <title>timer</title>
   </head>
-  <body>
+  <body onload="onloadCountDown()">
     <div class="container">
       <div class="timer-container">
         <img
@@ -23,13 +27,23 @@
           class="timer-image"
         />
         <div class="time-counter">
-          <p class="minutes-counter">2</p>
+          <p class="minute-counter">02</p>
           <p class="seperator">:</p>
-          <p class="seconds-counter">00</p>
+          <p class="second-counter">00</p>
         </div>
-        <button class="start-btn btn">Start</button>
-        <button class="pause-btn btn">Pause</button>
-        <button class="reset-btn btn">Reset</button>
+        <div class="time-up-alert">
+          <p class="time-up">Time's up</p>
+          <p class="help">please <span>reset</span> the timer</p>
+        </div>
+        <button class="start-btn btn" type="button" onclick="start()">
+          Start
+        </button>
+        <button class="pause-btn btn" type="button" onclick="pause()">
+          Pause
+        </button>
+        <button class="reset-btn btn" type="button" onclick="reset()">
+          Reset
+        </button>
       </div>
     </div>
   </body>
