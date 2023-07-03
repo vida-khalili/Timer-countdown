@@ -12,7 +12,7 @@ function onloadCountDown() {
     if (previousSate === "started") {
       start();
     }
-    console.log(`minute: ${minuteCounter} , second: ${secondCounter}`);
+    // console.log(`minute: ${minuteCounter} , second: ${secondCounter}`);
   }
 }
 
@@ -50,7 +50,7 @@ function start() {
     }
     Cookies.set("second", secondCounter);
     Cookies.set("minute", minuteCounter);
-    console.log(`minute: ${minuteCounter} , second: ${secondCounter}`);
+    // console.log(`minute: ${minuteCounter} , second: ${secondCounter}`);
     document.querySelector(".start-btn").disabled = true;
   }, 1000);
   Cookies.set("state", "started");
@@ -67,7 +67,6 @@ function reset() {
   minuteCounter = 2;
   secondCounter = 60;
   document.querySelector(".time-up-alert").style.display = "none";
-
   document.querySelector(".second-counter").innerHTML = "00";
   document.querySelector(".minute-counter").innerHTML = minuteCounter;
   document.querySelector(".start-btn").disabled = false;
