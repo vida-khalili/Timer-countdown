@@ -8,6 +8,7 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: auto auto;
@@ -116,4 +117,23 @@ body {
   top: 18px;
   left: 42%;
   border: 2px solid #000072;
+}
+
+.author {
+  margin-top: 12px;
+  font-size: 14px;
+  color: navy;
+  font-weight: 400;
+}
+.author a {
+  color: #000072;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 2px solid navy;
+  font-weight: 600;
+  transition: border-bottom 100ms ease-in-out;
+}
+
+.author a:hover {
+  border-bottom: none;
 }
