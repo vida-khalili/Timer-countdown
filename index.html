@@ -1,62 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style/reset.css" />
-    <link rel="stylesheet" href="./style/style.css" />
-    <script src="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style/reset.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <script src="
       https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js
       "></script>
-    <script src="./script/script.js"></script>
-    <title>timer</title>
-  </head>
-  <body onload="onloadCountDown()">
-    <div class="container">
-      <div class="timer-container">
-        <img
-          src="./images/timer-bg.svg"
-          alt="timer background"
-          class="timer-image"
-        />
-        <div class="time-counter">
-          <p class="minute-counter">02</p>
-          <p class="seperator">:</p>
-          <p class="second-counter">00</p>
-        </div>
-        <div class="time-up-alert">
-          <p class="time-up">Time's up</p>
-          <p class="help">please <span>reset</span> the timer</p>
-        </div>
-        <button class="start-btn btn" type="button" onclick="start()">
-          Start
-        </button>
-        <button class="pause-btn btn" type="button" onclick="pause()">
-          Pause
-        </button>
-        <button class="reset-btn btn" type="button" onclick="reset()">
-          Reset
-        </button>
+  <script src="./script/script.js"></script>
+  <title>timer</title>
+</head>
+
+<body onload="onloadCountDown()">
+  <div class="container">
+    <div class="timer-container">
+      <img src="./images/timer-bg.svg" alt="timer background" class="timer-image" />
+      <div class="time-counter">
+        <p class="minute-counter">02</p>
+        <p class="seperator">:</p>
+        <p class="second-counter">00</p>
       </div>
-      <div class="author">
-        coded by
-        <a
-          href="https://github.com/vida-khalili/Timer-countdown"
-          target="_blank"
-          >Vida Khalili</a
-        >
-        and hosted on
-        <a href="https://timer-countdown-js.netlify.app" target="_blank"
-          >Netlify</a
-        >
+      <div class="time-up-alert">
+        <p class="time-up">Time's up</p>
+        <p class="help">please <span>reset</span> the timer</p>
       </div>
+      <button class="start-btn btn" type="button" onclick="start()">
+        Start
+      </button>
+      <button class="pause-btn btn" type="button" onclick="pause()">
+        Pause
+      </button>
+      <button class="reset-btn btn" type="button" onclick="reset()">
+        Reset
+      </button>
     </div>
-  </body>
+    <div class="author">
+      coded by
+      <a href="https://www.linkedin.com/in/vida-khalili-bbb500a4/" target="_blank">Vida Khalili</a>
+      and hosted on
+      <a href="https://timer-countdown-js.netlify.app" target="_blank">Netlify</a>
+    </div>
+  </div>
+</body>
+
 </html>
